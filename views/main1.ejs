@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .d1{
+            background-color: violet;
+            height: 700px;
+            width: 100%;
+            padding:50px ;
+        }
+        .d4{
+            background-color: yellowgreen;
+            height: 800px;
+            width: 100%;
+            padding: 50px;
+        }
+        .d7{
+            background-color: violet;
+            height: 600px;
+            /* width: 100%; */
+            /* margin: 0px; */
+        }
+        .d2{
+            /* background-color: antiquewhite; */
+            height: 100px;
+            width: 80%;
+            font-size: 100px;
+           text-align: center;
+           padding-left: 100px;
+           /* color: white; */
+           /* text-shadow:5px solid #ffffff; */
+        }
+        .d5{
+
+            /* background-color: antiquewhite; */
+            height: 100px;
+            width: 80%;
+            font-size: 80px;
+           text-align: center;
+           padding-left: 20%;
+           /* text-decoration: 2px solid black; */
+          }
+        .d8{
+           /* background-color: antiquewhite; */
+            height: 100px;
+            width: 80%;
+            font-size: 80px;
+           text-align: center;
+           padding-left: 100px;
+           }
+        @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* html {
+  background-color: #ecf9ff;
+} */
+
+/* body {
+  color: #272727;
+  font-family: 'Quicksand', serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+} */
+
+.main{
+  max-width: 1200px;
+  margin: auto;
+  /* font-family: 'Quintessential', cursive; */
+
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    /* text-shadow: 3px solid #ffffff; */
+}
+
+img{
+  height: 260px;
+  max-width: 400px;
+  vertical-align: middle;
+}
+.d3_1{
+ height: 400px;
+  width: 900px;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+.made_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+.d3{
+  float: left;
+    display: inline-table;
+    height: 300px;
+    text-align: center;
+    padding: 50px;
+    width: 550px;
+    /* color: #ffffff; */
+    /* text-shadow:3px solid #ffffff; */
+}
+.d3-1{
+  /* height: 200px;k */
+  /* width: 200px; */
+  float: left;
+  padding-left: 30%;
+  padding-top: 1%;
+}
+/* @media (min-width: 40rem) {
+  .d3-1{
+    width: 50%;
+  }
+} */
+    </style>
+</head>
+<body>
+    <div class="d1">
+      <div class="d2"><%=city.name%></div>
+    <div class="d3"><h1>DESCRIPTION</h1><br><%=city.description%></div>
+      <div class="d3-1"><img class= "d3_1" src="<%=city.photopath%>" alt=""></div>
+    </div>
+    <div class="d4">
+      <div class="d5">LOCATIONS TO EXPLORE</div>
+      <div class="d6">
+        <div class="main">
+            <ul class="cards">
+              <li class="cards_item">
+       <div class="card">
+        <div class="card_image"><img src="<%=city.locations[0].photopath%>"></div>
+        <div class="card_content">
+          <h2 class="card_title"><%=city.locations[0].name%></h2>
+          <p class="card_text"><%=city.locations[0].description%></p>
+          <!-- <button class="btn card_btn">Read More</button> -->
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="<%=city.locations[1].photopath%>"></div>
+        <div class="card_content">
+          <h2 class="card_title"><%=city.locations[1].name%></h2>
+          <p class="card_text"><%=city.locations[1].description%></p>
+          <!-- <button class="btn card_btn">Read More</button> -->
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+        <div class="card">
+        <div class="card_image"><img src="<%=city.locations[2].photopath%>"></div>
+          <div class="card_content">
+            <h2 class="card_title"><%=city.locations[2].name%></h2>
+            <p class="card_text"><%=city.locations[2].description%></p>
+            <!-- <button class="btn card_btn">Read More</button> -->
+          </div>
+        </div>
+        </li>
+    </ul>
+  </div>
+</div>
+ </div>
+    <div class="d7">
+      <div class="d8">ACTIVITIES</div>
+      <div class="d9"> 
+        <div class="main">
+      <ul class="cards">
+        <li class="cards_item">
+   <div class="card">
+  <div class="card_image"><img src="/images/activities/jaipur/1.jpg"></div>
+  <div class="card_content">
+    <h2 class="card_title">ATV RIDE IN JAIPUR</h2>
+    <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis molestias culpa, eos in repellat aliquam adipisci aperiam atque quas itaque dolorem praesentium nemo, ex sint sunt aspernatur, hic esse?</p>
+   <a href="/activities"> <button class="btn card_btn">Book Now</button></a>
+  </div>
+</div>
+</li>
+<li class="cards_item">
+<div class="card">
+  <div class="card_image"><img src="/images/activities/jaipur/2.jpg"></div>
+  <div class="card_content">
+    <h2 class="card_title">NAHARGARH CYCLING EXPEDITION IN JAIPUR</h2>
+    <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, fugit laborum vitae qui in nesciunt possimus dignissimos ducimus ess</p>
+    <a href="/activities"><button class="btn card_btn">Book Now</button></a>
+  </div>
+</div>
+</li>
+<li class="cards_item">
+  <div class="card">
+    <div class="card_image"><img src="/images/activities/jaipur/3.jpg"></div>
+    <div class="card_content">
+      <h2 class="card_title">VILLAGE JEEP SAFARI IN JAIPUR</h2>
+      <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor unde consectetur facilis nobis est aperiam sed maiores dolorem commodi veritatis quia ipsam maxime aliquid, corrupti eum, ipsa eligendi ad id!</p>
+     <a href="/activities"> <button class="btn card_btn">Book Now</button></a>
+    </div>
+  </div>
+</li>
+</ul>
+</div></div>
+</body>
+</html>

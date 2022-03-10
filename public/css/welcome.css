@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.d1{
+    background-image: url(../images/bgimages/rj8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:781px;
+    position: relative;
+}
+.d2{
+    font-family: 'Quintessential', cursive;
+    font-size:50px;
+    /* background-image: url(../images/rj8.jpg); */
+   /* height:321px ; */
+   /* width: 363px; */
+   margin-top:7%;
+   margin-left:30%;
+   position: absolute;
+   /* background-color: blanchedalmond; */
+   text-align:center;
+   color: white;
+}
+h1{
+    text-shadow: 3px 3px 9px #FF0000;
+}
+button{
+    height: 41px;
+    width: 170px;
+    color: white;
+    background-color: red;
+    /* margin-top: 43%; */
+    /* margin-left: 40%; */
+    /* margin-bottom: 5%; */
+    box-shadow: 3px 3px 9px #ff0022;
+}

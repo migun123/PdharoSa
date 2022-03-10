@@ -1,0 +1,57 @@
+<%- include('./partials/top.ejs')%>
+<%- include('./partials/topbar.ejs')%>
+
+<%- include('./partials/navbar.ejs')%>
+<style>
+    .D{
+        padding: 5%;
+    }
+    
+    button{
+        background-color: blue;
+    color: aliceblue;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    width: 100px;
+    }
+</style>
+<div class="D">
+<div class="d1">
+ <h1>ADD ACTIVITY</h1>
+<form action="/fillactivity" method="post">
+      <div class="d2">
+        <select class="d3" name="city">
+            <option value="">Select Places</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Jodhpur">Jodhpur</option>
+            <option value="Udaipur">Udaipur</option>
+            <option value="Jaisalmer">Jaisalmer</option>
+            <option value="Bikaner">Bikaner</option>
+            <option value="Pushkar">Pushkar</option>
+            <option value="Kota">Kota</option>
+            <option value="Chittorgarh">Chittorgarh</option>
+            <option value="Mount Abu">Mount Abu</option>
+        </select>
+    </div>
+<br>
+</div>
+<div class="d2">
+    <h1>Activites</h1>
+       Name: <input type="text" id="1" name="name"><br><br>
+       Description :<input type="text" id="2" name="description"><br><br>
+       Price :<input type="text" id="3" name="price"><br><br>
+       Start Time: <input type="text" id="4" name="starttime"><br><br>
+       End Time: <input type="text" id="5" name="endtime"><br>
+       <input type="submit" value="save" style="background-color: blue;
+       color: aliceblue;
+       margin: 10%">
+    </form><br>
+</div>
+</div>
+
+
+
+
+
+
+<%- include('./partials/bottom.ejs')%>

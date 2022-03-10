@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+    .d1{
+        background-image: url(../images/bgimages/rj16.jpg);
+        height: 430px;
+        padding: 50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
+    .d2{
+        height: 100px;
+        text-align: center;
+        font-size: 38px;
+        outline: 5px solid white;
+
+    }
+    .d3{
+    float: left;
+    display: inline-table;
+    height: 330px;
+    text-align: center;
+    padding: 20px;
+    width: 500px;
+    }
+    .d4{
+        float: right;
+    height: 320px;
+    padding: 20px;
+    width: 500px;
+
+    }
+    .d5{
+        height: 430px;
+        padding: 50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+    }
+    .d6{
+        height: 100px;
+        text-align: center;
+        font-size: 30px;
+        outline: 5px solid black;
+        padding-left:50px ;
+
+      }
+    .d7{
+        height: 430px;
+        background-image: url(../images/bgimages/rj16.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 50px;
+    }
+    .d8{
+        height: 100px;
+        text-align: center;
+        font-size: 30px;
+        outline: 5px solid black;
+    }
+    .d2,.d6,.d8,.d3,.d6-1{
+        font-family: 'Quintessential', cursive;
+    }
+    .d6-1{
+        border: 4px solid black;
+        height: 300px;
+        width: 1000px;
+        margin: 20px;
+        /* display: inline-table; */
+        }
+    .d6-2{
+        height:300px ;
+        width: 1000px;
+    }
+    .d6-3{
+        float: right;
+    }
+    .d8-1{
+        border: 4px solid black;
+        margin: 30px;
+        height: 300px;
+        padding: 10px;
+        width: 1000px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    button{
+        height: 30px;
+        width: 70px;
+        background-color: blue;
+    }
+    .d8-2{
+        float: left;
+    }
+    </style>
+</head>
+<body>
+    <div class="d1">
+        <div class="d2"><h1><%= data.name%></h1></div>
+        <div class="d3"><h2>DESCRIPTION</h2> <br><%= data.description%></div>
+    <!-- <div class="d4"><img src="../images/places/jaipur/main.jpg" alt=""height="320px" width="500px" ></div> -->
+    <div class="d4"><img src="<%= data.photopath%>" alt=""height="320px" width="500px" ></div>
+    </div><hr><br>
+    <div class="d5">
+        <div class="d6"><h1>LOCATIONS TO EXPLORE</h1>
+        </div>
+         
+        <div class="d6-1">
+           <!-- <h1>AMBER FORT</h1>  -->
+           <h1><%= data.locations[0].name%></h1>
+            <div class="d6-2"><img src="<%= data.locations[0].photopath%>" alt="" width="300px">
+                <div class="d6-3">
+                    <h2>DESCRIPTION</h2>
+                    <%= data.locations[0].description%>
+                </div>
+            </div>
+        </div>
+    </div><hr><br>
+    <div class="d7">
+        <div class="d8"><h1>ACTIVITIES<h1></div>
+            <div class="d8-1"><img src="../images/activities/jaipur/1.jpg" alt="" width="300px"><div class="d8-2"><h2>DESCRIPTION</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat suscipit optio eligendi corrupti placeat atque quas ex doloribus fuga? Praesentium animi voluptas rerum voluptatibus earum asperiores sit deleniti sunt necessitatibus?<br><br>
+           <button><a href="#" class="d8-3">Book Now</a></button></div>
+        </div>
+    </div>
+</body>
+</html>

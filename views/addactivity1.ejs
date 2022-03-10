@@ -1,0 +1,109 @@
+<%- include('./partials/top.ejs')%>
+<%- include('./partials/topbar.ejs')%>
+
+<%- include('./partials/navbar.ejs')%>
+<div class="d1">
+ <h1>ADD ACTIVITY</h1>
+<form action="/addplaces" method="post">
+      <div class="d2">
+        <select class="form-control show-tick">
+            <option value="">Select Places</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Jodhpur">Jodhpur</option>
+            <option value="Udaipur">Udaipur</option>
+            <option value="Jaisalmer">Jaisalmer</option>
+            <option value="Bikaner">Bikaner</option>
+            <option value="Pushkar">Pushkar</option>
+            <option value="Kota">Kota</option>
+            <option value="Chittorgarh">Chittorgarh</option>
+            <option value="Mount Abu">Mount Abu</option>
+        </select>
+    </div>
+</form>
+</div>
+<div class="d3">
+    <h1>Activities</h1>
+    <table border="3px">
+        <tr>
+        <th>Photo</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        </tr>
+        <tr>
+            <td><img src="/images/activities/jaipur/3.jpg" alt=""></td>
+            <td>Nahargarh cycling expeditionin jaipur</td>
+            <td><div class="d4">
+                <div class="demo-google-material-icon"> <i class="material-icons">schedule</i> <span class="icon-name"> 3h</span></div>
+            </div></td>
+            <td>1300</td>
+          </tr>
+          <tr>
+              <td><img src="/images/activities/jaipur/2.jpg" alt=""></td>
+              <td>Village jeep safari in jaipur</td>
+            <td><div class="d4">
+                <div class="demo-google-material-icon"> <i class="material-icons">schedule</i> <span class="icon-name"> 3h</span> </div>
+            </div></td>
+            <td>1200</td>
+          </tr>
+          <tr>
+              <td><img src="" alt=""></td>
+              <td>Hot air balloon</td>
+            <td><div class="d4">
+                <div class="demo-google-material-icon"> <i class="material-icons">schedule</i> <span class="icon-name"> 1h</span> </div>
+            </div></td>
+            <td>12,000</td>
+          </tr>
+          <tr>
+              <td><img src="" alt=""></td>
+              <td>Paint ball in jaipur</td>
+            <td><div class="d4">
+                <div class="demo-google-material-icon"> <i class="material-icons">schedule</i> <span class="icon-name"> 1h</span> </div>
+            </div></td>
+            <td>450</td>
+          </tr>
+          <tr>
+              <td><img src="/images/activities/jaipur/1.jpg" alt=""></td>
+              <td>Atv ride in jaipur</td>
+            <td><div class="d4">
+                <div class="demo-google-material-icon"> <i class="material-icons">schedule</i> <span class="icon-name"> 1h</span> </div>
+            </div></td>
+            <td>999</td>
+          </tr>
+          <tr>
+              <td><img src="" alt=""></td>
+              <td>Village jeep safari in jaipur</td>
+            <td><div class="d4">
+                <div class="demo-google-material-icon"> <i class="material-icons">schedule</i> <span class="icon-name"> 3h</span> </div>
+            </div></td>
+            <td>1200</td>
+          </tr>
+          <tr>
+              <td><img src="" alt=""></td>
+              <td>Village jeep safari in jaipur</td>
+            <td><div class="d4">
+                <div class="demo-google-material-icon"> <i class="material-icons">schedule</i> <span class="icon-name"> 3h</span> </div>
+            </div></td>
+            <td>1200</td>
+          </tr>
+          <tr>
+              <td><img src="" alt=""></td>
+              <td>Village jeep safari in jaipur</td>
+            <td><div class="d4">
+                <div class="demo-google-material-icon"> <i class="material-icons">schedule</i> <span class="icon-name"> 3h</span> </div>
+            </div></td>
+            <td>1200</td>
+          </tr>
+          <tr>
+              <td><img src="" alt=""></td>
+              <td>Village jeep safari in jaipur</td>
+            <td><div class="d4">
+                <div class="demo-google-material-icon"> <i class="material-icons">schedule</i> <span class="icon-name"> 3h</span> </div>
+            </div></td>
+            <td>1200</td>
+          </tr>
+    </table>
+
+</div>
+
+<%- include('./partials/bottom.ejs')%>
